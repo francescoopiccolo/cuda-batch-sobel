@@ -1,0 +1,13 @@
+CUDA batch Sobel edge detection
+GPU: GeForce GTX 1650 Ti
+Compute capability: 7.5
+Images processed: 256
+Image size: 128x128
+Pixels processed: 4194304
+Input: data
+Output: output
+Kernel time (CUDA events): 0.292 ms
+GPU allocation + transfers + kernel + cleanup: 85.831 ms
+CPU reference time: 20.826 ms
+Pixel mismatches: 0
+Validation: PASS

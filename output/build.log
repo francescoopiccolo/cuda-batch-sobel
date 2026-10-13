@@ -1,0 +1,15 @@
+Actual local Windows build, 2026-10-13 (Europe/Rome)
+Compiler: NVIDIA CUDA Toolkit 11.8
+Host: Visual Studio 2022 Build Tools, MSVC 14.44
+Command: nvcc -O2 -std=c++14 -arch=sm_75 --allow-unsupported-compiler -D_ALLOW_COMPILER_AND_STL_VERSION_MISMATCH src/main.cu src/sobel.cu -o bin/sobel.exe
+The two compatibility flags allow this newer MSVC host compiler with CUDA 11.8; they are only needed for this local build.
+
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2022 NVIDIA Corporation
+Built on Wed_Sep_21_10:41:10_Pacific_Daylight_Time_2022
+Cuda compilation tools, release 11.8, V11.8.89
+Build cuda_11.8.r11.8/compiler.31833905_0
+main.cu
+sobel.cu
+   Creazione della libreria bin\sobel.lib e dell'oggetto bin\sobel.exp
+Build exit code: 0
